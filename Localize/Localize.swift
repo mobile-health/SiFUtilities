@@ -43,7 +43,7 @@ public protocol Localizable {
 
 extension String: Localizable {
     public var localized: String {
-        return localized()
+        return localized(in: Localize.currentBundle())
     }
 }
 
